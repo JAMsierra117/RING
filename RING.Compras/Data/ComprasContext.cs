@@ -17,7 +17,9 @@ namespace RING.Compras.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Proveedor>()
-                .HasKey(k => k.ID_Proveedor);         
+                .ToTable("Proveedores", "Compras")
+                .HasKey(k => k.ID_Proveedor);
+                         
         }
     }
 }
