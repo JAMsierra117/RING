@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RING.Compras\RING.Compras.csproj" />
+    <ProjectReference Include="..\RING.Generales\RING.Generales.csproj" />
+    <ProjectReference Include="..\RING.Inventarios\RING.Inventarios.csproj" />
+    <ProjectReference Include="..\RING.Ventas\RING.Ventas.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Compras\" />
+    <Folder Include="Controllers\Inventarios\" />
+    <Folder Include="Controllers\Ventas\" />
+    <Folder Include="Dtos\Compras\" />
+    <Folder Include="Dtos\Inventarios\" />
+    <Folder Include="Dtos\Ventas\" />
+  </ItemGroup>
+
+</Project>
